@@ -1,34 +1,42 @@
 @charset "utf-8";
 /* CSS Document */
-
-/* Estilo general */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 80px 20px;
   background-color: #111;
   color: white;
+  font-family: Arial, sans-serif;
   text-align: center;
-  padding: 20px;
+  overflow-x: hidden;
+  position: relative;
 }
 
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+canvas#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
 }
 
-.mensaje {
-  font-size: 1.2rem;
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.marca {
   color: #ccc;
 }
 
-.contador {
-  margin: 20px 0;
-  font-size: 1.5rem;
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 .boton {
   display: inline-block;
-  margin-top: 20px;
   padding: 12px 24px;
   background-color: #fff;
   color: #000;
@@ -37,26 +45,7 @@ header h1 {
   font-weight: bold;
 }
 
-.newsletter {
-  margin-top: 50px;
+.boton:hover {
+  background-color: #ccc;
 }
 
-.newsletter input[type="email"] {
-  padding: 10px;
-  width: 250px;
-  margin-right: 10px;
-}
-
-.newsletter button {
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #000;
-  border: none;
-  cursor: pointer;
-}
-
-footer {
-  margin-top: 60px;
-  font-size: 0.9rem;
-  color: #888;
-}
